@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1788835376" />
+    <testcase name="tb_not16" classname="tb_not16" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_not16.py" lineno="5" time="0.00029349327087402344" sim_time_ns="1.000001" ratio_time="3407.2365510186837">
+      <failure message="Test failed with RANDOM_SEED=1788835376" />
+    </testcase>
+  </testsuite>
+</testsuites>
