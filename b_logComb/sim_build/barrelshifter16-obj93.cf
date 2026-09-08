@@ -1,0 +1,4 @@
+v 4
+file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/barrelshifter16.vhd" "e4320cc859e74de3010cdf4c4b81f96d0f2546a4" "20260908192137.735":
+  entity barrelshifter16 at 1( 0) + 0 on 11;
+  architecture rtl of barrelshifter16 at 13( 274) + 0 on 12;

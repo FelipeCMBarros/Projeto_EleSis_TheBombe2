@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1788895296" />
+    <testcase name="tb_nor8way" classname="tb_nor8way" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_nor8way.py" lineno="5" time="0.0015692710876464844" sim_time_ns="20.0" ratio_time="12744.770586447888" />
+  </testsuite>
+</testsuites>

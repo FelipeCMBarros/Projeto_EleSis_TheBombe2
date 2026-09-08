@@ -1,0 +1,4 @@
+v 4
+file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/mux2way.vhd" "f447786d6972485719eae0c0c687d5652330f0f2" "20260908192142.358":
+  entity mux2way at 1( 0) + 0 on 11;
+  architecture arch of mux2way at 12( 177) + 0 on 12;

@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1788895308" />
+    <testcase name="tb_mux8way16" classname="tb_mux8way16" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_mux8way16.py" lineno="5" time="0.0009565353393554688" sim_time_ns="1.0" ratio_time="1045.4396809571285">
+      <failure error_type="AssertionError" error_msg="Error in test 0!&#10;assert False" />
+    </testcase>
+  </testsuite>
+</testsuites>
