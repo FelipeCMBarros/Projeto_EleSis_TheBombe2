@@ -11,4 +11,8 @@ end entity;
 architecture arch of or16 is
 begin
 
+    gen_or : for i in 0 to 15 generate
+        q(i) <= a(i) or b(i);
+    end generate gen_or;
+
 end architecture;
