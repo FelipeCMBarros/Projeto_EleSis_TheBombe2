@@ -1,4 +1,0 @@
-v 4
-file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/circuito.vhd" "5d71c02335e96a19ef67a6d074cc122512afdade" "20260908024306.065":
-  entity circuito at 1( 0) + 0 on 11;
-  architecture arch of circuito at 10( 139) + 0 on 12;

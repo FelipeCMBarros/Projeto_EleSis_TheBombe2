@@ -6,7 +6,7 @@ entity mux2way is
         a   : in  STD_LOGIC;
         b   : in  STD_LOGIC;
         sel : in  STD_LOGIC;
-        q   : out STD_LOGIC;
+        q   : out STD_LOGIC
     );
 end entity;
 

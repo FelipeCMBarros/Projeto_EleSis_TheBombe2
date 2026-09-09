@@ -1,4 +1,0 @@
-v 4
-file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/sevenseg.vhd" "e174e7c147c024bdc966270f335d3bba6f7ce61a" "20260908024307.515":
-  entity sevenseg at 1( 0) + 0 on 11;
-  architecture arch of sevenseg at 10( 171) + 0 on 12;
