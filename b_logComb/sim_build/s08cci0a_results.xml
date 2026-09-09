@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1788835382" />
+    <testcase name="tb_mux4way" classname="tb_mux4way" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_mux4way.py" lineno="5" time="0.0003745555877685547" sim_time_ns="1.000001" ratio_time="2669.833350925525">
+      <failure message="Test failed with RANDOM_SEED=1788835382" />
+    </testcase>
+  </testsuite>
+</testsuites>
