@@ -1,4 +1,0 @@
-v 4
-file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/and16.vhd" "737ef18fcdd316992db3b8f5822039af6a4309b3" "20260908192131.612":
-  entity and16 at 1( 0) + 0 on 11;
-  architecture arch of and16 at 11( 212) + 0 on 12;

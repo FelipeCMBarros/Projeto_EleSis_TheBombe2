@@ -1,8 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1788895293" />
-    <testcase name="tb_or16" classname="tb_or16" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_or16.py" lineno="5" time="0.0007069110870361328" sim_time_ns="1.0" ratio_time="1414.6050590219224">
-      <failure error_type="AssertionError" error_msg="Error in test 0!&#10;assert False" />
-    </testcase>
-  </testsuite>
-</testsuites>

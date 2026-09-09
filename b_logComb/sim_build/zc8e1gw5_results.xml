@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1788895297" />
-    <testcase name="tb_barrelshifter16" classname="tb_barrelshifter16" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_barrelshifter16.py" lineno="5" time="0.0014853477478027344" sim_time_ns="20.0" ratio_time="13464.860353130016" />
-  </testsuite>
-</testsuites>

@@ -1,4 +1,0 @@
-v 4
-file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/nor8way.vhd" "0d5f129988e61f412c94598d0e5e5a5ac86f59b5" "20260908192136.596":
-  entity nor8way at 1( 0) + 0 on 11;
-  architecture arch of nor8way at 17( 292) + 0 on 12;

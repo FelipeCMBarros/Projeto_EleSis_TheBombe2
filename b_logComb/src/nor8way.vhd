@@ -18,9 +18,4 @@ architecture arch of nor8way is
 	signal word: STD_LOGIC_VECTOR(7 downto 0);
 begin
 
-	word <= a & b & c & d & e & f & g & h;
-
-	q <= not (word(0) or word(1) or word(2) or word(3) or 
-	word(4) or word(5) or word(6) or word(7));
-
 end architecture;

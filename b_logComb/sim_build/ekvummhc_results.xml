@@ -1,8 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1788895302" />
-    <testcase name="tb_mux2way" classname="tb_mux2way" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_mux2way.py" lineno="5" time="0.0007107257843017578" sim_time_ns="1.0" ratio_time="1407.0124119423012">
-      <failure error_type="AssertionError" error_msg="Error in test 0!&#10;assert False" />
-    </testcase>
-  </testsuite>
-</testsuites>

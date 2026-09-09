@@ -1,8 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1788895309" />
-    <testcase name="tb_detector_de_moedas" classname="tb_detector_de_moedas" file="/home/borg/Projeto_EleSis_TheBombe2/b_logComb/test_cases/tb_detector_de_moedas.py" lineno="5" time="0.0008218288421630859" sim_time_ns="1.0" ratio_time="1216.7983753988976">
-      <failure error_type="AssertionError" error_msg="Error in test 0!&#10;assert False" />
-    </testcase>
-  </testsuite>
-</testsuites>
