@@ -37,7 +37,6 @@ begin
           port map(
               a => a(i),
               b => b(i),
-              c => carry(i),
               soma => q(i),
               vaium => carry(i + 1)
             );
