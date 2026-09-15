@@ -29,6 +29,6 @@ architecture rtl of Add16 is
   end component;
 
 begin
-  q <= std_logic_vector(unsigned(a) + unsigned(b));
+  q <= std_logic_vector(FullAdder(a) + FullAdder(b));
 
 end architecture;
