@@ -29,6 +29,7 @@ architecture rtl of Inc16 is
   end component;
 
 begin
-  -- Implementação vem aqui!
-
+  a => a(i),
+  b => '1',
+  q => sum(i),
 end architecture;
