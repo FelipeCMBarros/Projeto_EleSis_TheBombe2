@@ -31,4 +31,17 @@ architecture rtl of Add16 is
 begin
   -- Implementação vem aqui!
 
+  carry(0) <= '0';
+
+    GEN_FULL_ADDERS: for i in 0 to 15 generate
+
+        FA: entity work.fulladder
+            port map (
+                a => a(i),
+                b => b(i),
+                q => sum(i),
+            );
+
+    end generate GEN_FULL_ADDERS;
+
 end architecture;
