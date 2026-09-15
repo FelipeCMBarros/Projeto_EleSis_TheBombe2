@@ -35,7 +35,7 @@ begin
           port map(
               a => a(i),
               b => b(i),
-              soma => q(i),
+              soma => q(i)
             );
 
     end generate;
