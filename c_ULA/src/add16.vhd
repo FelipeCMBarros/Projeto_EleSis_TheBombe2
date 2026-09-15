@@ -29,15 +29,22 @@ architecture rtl of Add16 is
   end component;
 
 begin
-  gen_adders : for i in 0 to 15 generate
 
-      FA : FullAdder 
-          port map(
-              a => a(i),
-              b => b(i),
-              soma => q(i)
+    carry(0) <= '0';
+
+    gen_adders : for i in 0 to 15 generate
+
+        FA : FullAdder
+            port map(
+                a     => a(i),
+                b     => b(i),
+                c     => carry(i),
+                soma  => q(i),
+                vaium => carry(i + 1)
             );
 
     end generate;
+
+    -- carry(16) é ignorado
 
 end architecture;
