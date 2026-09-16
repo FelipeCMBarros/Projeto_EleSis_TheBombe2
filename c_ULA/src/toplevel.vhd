@@ -32,31 +32,56 @@ architecture rtl of TopLevel is
 -- signals
 --------------
 
-  signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
-  signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
+  constant a : std_logic_vector(15 downto 0) := "1000000000000000";
+  constant b : std_logic_vector(15 downto 0) := "1000000000000000";
+  signal zero : std_logic;
+  signal neg: std_logic;
+  signal ext : std_logic_vector(15 downto 0);
+  signal overflow : std_logic;
 
 --------------
 -- component
 --------------
-  component HalfAdder is
+  component ALU is
     port(
-      a,b:         in STD_LOGIC;   -- entradas
-      soma,vaium: out STD_LOGIC   -- sum e carry
+			x:	  in STD_LOGIC_VECTOR(15 downto 0);   -- entrada y
+			y:   in STD_LOGIC_VECTOR(15 downto 0);   -- entrada x
+			zx:    in STD_LOGIC;                     -- zera a entrada x
+			nx:    in STD_LOGIC;                     -- inverte a entrada x
+			zy:    in STD_LOGIC;                     -- zera a entrada y
+			ny:    in STD_LOGIC;                     -- inverte a entrada y
+			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			shift: in STD_LOGIC;
+			direct:in STD_LOGIC;
+			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
+			ng:    out STD_LOGIC;                    -- setado se saída é negativa
+			saida: out STD_LOGIC_VECTOR(15 downto 0); -- saída de dados da ALU
+			err:   out STD_LOGIC								-- exibe overflow na soma
       );
   end component;
-
-  component FullAdder is
-      port(
-          a,b,c:      in STD_LOGIC;   -- entradas
-          soma,vaium: out STD_LOGIC   -- sum e carry
-          );
-    end component;
-
 ---------------
 -- implementacao
 ---------------
 begin
-
-  u1 : HalfAdder port map(a => SW(0), b=> SW(1), soma => LEDR(0), vaium => LEDR(1));
-
+	A0 : ALU
+	port map(
+		x => a,
+		y => b,
+		zx => sw(0),
+		nx => sw(1),
+		zy => sw(2),
+		ny => sw(3),
+		f => sw(4),
+		no => sw(5),
+		shift => sw(6),
+		direct => sw(7),
+		zr => zero,
+		ng => neg,
+		saida => ext,
+		err => overflow
+	);
+	LEDR(0) <= overflow;
+	LEDR(1) <= zero;
+	LEDR(2) <= neg;
 end rtl;

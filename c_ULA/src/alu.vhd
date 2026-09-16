@@ -35,9 +35,12 @@ entity ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			shift: in STD_LOGIC;
+			direct:in STD_LOGIC;
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
-			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
+			saida: out STD_LOGIC_VECTOR(15 downto 0); -- saída de dados da ALU
+			err:   out STD_LOGIC
 	);
 end entity;
 
@@ -64,7 +67,8 @@ architecture  rtl OF alu is
 		port(
 			a   :  in STD_LOGIC_VECTOR(15 downto 0);
 			b   :  in STD_LOGIC_VECTOR(15 downto 0);
-			q   : out STD_LOGIC_VECTOR(15 downto 0)
+			q   : out STD_LOGIC_VECTOR(15 downto 0);
+			overflow   : out STD_LOGIC
 		);
 	end component;
 
@@ -93,7 +97,16 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+	component barrelshifter16 is
+		port ( 
+			a:    in  STD_LOGIC_VECTOR(15 downto 0);
+			dir:  in  std_logic;
+			size: in  std_logic_vector(2 downto 0);
+			q:    out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+   SIGNAL zxout, zyout, nxout, nyout, andout, adderout, muxout, precomp : std_logic_vector(15 downto 0);
+   SIGNAL shifted : std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
@@ -119,9 +132,9 @@ begin
 	port map(
 		a => nxout, b => nyout, q => andout
 	);
-	XORY : Add16
+	XADDY : Add16
 	port map(
-		a => nxout, b=> nyout, q => adderout
+		a => nxout, b=> nyout, q => adderout, overflow => err
 	);
 	MUX1 : Mux16
 	port map(
@@ -135,5 +148,12 @@ begin
 	port map(
 		a => precomp, zr => zr, ng => ng
 	);
-	saida <= precomp;
+	SH : barrelshifter16
+	port map(
+		a => precomp,
+		dir => direct,
+		size => "001",
+		q => shifted
+	);
+	saida <= precomp when shift = '0' else shifted;
 end architecture;

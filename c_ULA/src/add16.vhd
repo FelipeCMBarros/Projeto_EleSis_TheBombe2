@@ -5,7 +5,8 @@ entity Add16 is
     port(
         a : in  STD_LOGIC_VECTOR(15 downto 0);
         b : in  STD_LOGIC_VECTOR(15 downto 0);
-        q : out STD_LOGIC_VECTOR(15 downto 0)
+        q : out STD_LOGIC_VECTOR(15 downto 0);
+        overflow : out STD_LOGIC
     );
 end entity;
 
@@ -41,5 +42,6 @@ begin
     end generate;
 
     -- carry(16) eh propositalmente ignorado
+    overflow <= carry(16) XOR carry(15);
 
 end architecture;
