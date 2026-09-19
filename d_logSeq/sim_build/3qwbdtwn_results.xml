@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1789808266" />
+    <testcase name="tb_flipflopt" classname="tb_flipflopt" file="/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/test_cases/tb_flipflopt.py" lineno="5" time="0.0006880760192871094" sim_time_ns="17.500001" ratio_time="25433.237766564103">
+      <failure message="Test failed with RANDOM_SEED=1789808266" />
+    </testcase>
+  </testsuite>
+</testsuites>

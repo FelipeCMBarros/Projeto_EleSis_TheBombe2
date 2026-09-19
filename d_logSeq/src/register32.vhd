@@ -27,6 +27,7 @@ architecture arch of Register32 is
 
 begin
 
-
+	low:  Register16 port map(clock => clock, input => input(15 downto 0),  load => load, output => output(15 downto 0));
+	high: Register16 port map(clock => clock, input => input(31 downto 16), load => load, output => output(31 downto 16));
 
 end architecture;

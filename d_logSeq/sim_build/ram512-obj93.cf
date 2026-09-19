@@ -1,0 +1,31 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/ram512.vhd" "0e76999a24cfeefd7058a368831ddc50dc1d0c94" "20260919085753.036":
+  entity ram512 at 5( 65) + 0 on 11;
+  architecture arch of ram512 at 18( 352) + 0 on 12;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/ram64.vhd" "8fdf8a529f156e6f302f694170e78d5a0d5ba36d" "20260919085753.016":
+  entity ram64 at 5( 64) + 0 on 4;
+  architecture arch of ram64 at 18( 350) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/ram8.vhd" "31423550c3e4a1057fc14fdb9c36017bd8e9ac41" "20260919085753.016":
+  entity ram8 at 5( 63) + 0 on 4;
+  architecture arch of ram8 at 18( 348) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/register16.vhd" "729110c652aaa3285b2bd684938d1adc1044a575" "20260919085753.016":
+  entity register16 at 5( 69) + 0 on 4;
+  architecture arch of register16 at 17( 309) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/register8.vhd" "2cd079a5b9be3195e13eaee6444608289282eb60" "20260919085753.016":
+  entity register8 at 5( 68) + 0 on 4;
+  architecture arch of register8 at 17( 305) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/binarydigit.vhd" "eefa1f0d949a5ad2c905f633d2be30b86e9f5c00" "20260919085753.016":
+  entity binarydigit at 5( 70) + 0 on 4;
+  architecture arch of binarydigit at 17( 271) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/flipflopd.vhd" "f221659903df7e362d616fe9729411370a13f8fa" "20260919085753.016":
+  entity flipflopd at 5( 64) + 0 on 4;
+  architecture arch of flipflopd at 18( 279) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/mux2way.vhd" "de1f42954b9f8cb993f6289d9916705f9f3680a1" "20260919085753.016":
+  entity mux2way at 1( 0) + 0 on 4;
+  architecture arch of mux2way at 13( 209) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/mux8way16.vhd" "d793f6c01f0af88fe326ebafa35ec6c47c3a22dd" "20260919085753.016":
+  entity mux8way16 at 1( 0) + 0 on 4;
+  architecture arch of mux8way16 at 19( 583) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/dmux8way.vhd" "2c43390cbc5520439cbf047d553a6a2e74762478" "20260919085753.016":
+  entity dmux8way at 1( 0) + 0 on 4;
+  architecture arch of dmux8way at 18( 335) + 0 on 4;

@@ -1,0 +1,4 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/conceito_a/flipflopt.vhd" "67b342b3b08a48f4b5a7cc975d92815cd24e8f5a" "20260919085746.252":
+  entity flipflopt at 4( 43) + 0 on 11;
+  architecture arch of flipflopt at 16( 240) + 0 on 12;
