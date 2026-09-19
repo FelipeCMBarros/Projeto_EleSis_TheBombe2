@@ -1,4 +1,0 @@
-v 4
-file / "/home/borg/Projeto_EleSis_TheBombe2/b_logComb/src/detectordemoedas.vhd" "14db8e238358dd28303ae013841d9a4d33bc1aa3" "20260908024305.436":
-  entity detectordemoedas at 1( 0) + 0 on 11;
-  architecture arch of detectordemoedas at 11( 196) + 0 on 12;
