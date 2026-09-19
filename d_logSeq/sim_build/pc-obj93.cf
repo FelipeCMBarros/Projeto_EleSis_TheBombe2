@@ -1,0 +1,31 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/pc.vhd" "6f7b2a0f92197b17ab8253ccd2cce7e5a1002a4f" "20260919085751.173":
+  entity pc at 12( 277) + 0 on 11;
+  architecture arch of pc at 27( 655) + 0 on 12;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/register16.vhd" "729110c652aaa3285b2bd684938d1adc1044a575" "20260919085751.148":
+  entity register16 at 5( 69) + 0 on 4;
+  architecture arch of register16 at 17( 309) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/register8.vhd" "2cd079a5b9be3195e13eaee6444608289282eb60" "20260919085751.148":
+  entity register8 at 5( 68) + 0 on 4;
+  architecture arch of register8 at 17( 305) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/binarydigit.vhd" "eefa1f0d949a5ad2c905f633d2be30b86e9f5c00" "20260919085751.148":
+  entity binarydigit at 5( 70) + 0 on 4;
+  architecture arch of binarydigit at 17( 271) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/flipflopd.vhd" "f221659903df7e362d616fe9729411370a13f8fa" "20260919085751.148":
+  entity flipflopd at 5( 64) + 0 on 4;
+  architecture arch of flipflopd at 18( 279) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/mux2way.vhd" "de1f42954b9f8cb993f6289d9916705f9f3680a1" "20260919085751.148":
+  entity mux2way at 1( 0) + 0 on 4;
+  architecture arch of mux2way at 13( 209) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/mux16.vhd" "3fe64ca6bd337730add370278f42aed9b39afaf8" "20260919085751.148":
+  entity mux16 at 1( 0) + 0 on 4;
+  architecture arch of mux16 at 12( 235) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/c_ULA/src/inc16.vhd" "89da2db6683f4be77520d12fa6116b004ccb1986" "20260919085751.148":
+  entity inc16 at 1( 0) + 0 on 4;
+  architecture rtl of inc16 at 11( 193) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/c_ULA/src/add16.vhd" "329eae25ddd6ce9ac1ade3454fa80ffc273ee8cc" "20260919085751.148":
+  entity add16 at 1( 0) + 0 on 4;
+  architecture rtl of add16 at 12( 241) + 0 on 4;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/c_ULA/src/fulladder.vhd" "5d17c02ed8d0f8ef28a4157a78ff1ed8b18f2fd7" "20260919085751.148":
+  entity fulladder at 7( 90) + 0 on 4;
+  architecture rtl of fulladder at 17( 265) + 0 on 4;

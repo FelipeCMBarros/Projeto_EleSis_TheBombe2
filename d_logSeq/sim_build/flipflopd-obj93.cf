@@ -1,0 +1,4 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/flipflopd.vhd" "f221659903df7e362d616fe9729411370a13f8fa" "20260919085747.483":
+  entity flipflopd at 5( 64) + 0 on 11;
+  architecture arch of flipflopd at 18( 279) + 0 on 12;

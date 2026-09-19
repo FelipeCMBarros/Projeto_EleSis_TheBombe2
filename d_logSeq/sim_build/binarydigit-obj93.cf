@@ -1,0 +1,10 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/binarydigit.vhd" "eefa1f0d949a5ad2c905f633d2be30b86e9f5c00" "20260919085748.104":
+  entity binarydigit at 5( 70) + 0 on 11;
+  architecture arch of binarydigit at 17( 271) + 0 on 12;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/flipflopd.vhd" "f221659903df7e362d616fe9729411370a13f8fa" "20260919085748.104":
+  entity flipflopd at 5( 64) + 0 on 15;
+  architecture arch of flipflopd at 18( 279) + 0 on 16;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/b_logComb/src/mux2way.vhd" "de1f42954b9f8cb993f6289d9916705f9f3680a1" "20260919085748.104":
+  entity mux2way at 1( 0) + 0 on 13;
+  architecture arch of mux2way at 13( 209) + 0 on 14;

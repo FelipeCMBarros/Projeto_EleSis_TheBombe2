@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1789808270" />
+    <testcase name="tb_register32" classname="tb_register32" file="/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/test_cases/tb_register32.py" lineno="5" time="0.0007641315460205078" sim_time_ns="18.000001" ratio_time="23556.1548188156" />
+  </testsuite>
+</testsuites>

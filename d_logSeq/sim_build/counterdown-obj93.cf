@@ -1,0 +1,7 @@
+v 4
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/conceito_a/counterdown.vhd" "a9c550517b6c4e7c10a6d53ad8c8633341b8021f" "20260919085746.867":
+  entity counterdown at 4( 45) + 0 on 11;
+  architecture arch of counterdown at 14( 220) + 0 on 12;
+file / "/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/src/conceito_a/flipflopt.vhd" "67b342b3b08a48f4b5a7cc975d92815cd24e8f5a" "20260919085746.848":
+  entity flipflopt at 4( 43) + 0 on 4;
+  architecture arch of flipflopt at 16( 240) + 0 on 4;

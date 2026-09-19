@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1789808268" />
+    <testcase name="tb_binarydigit" classname="tb_binarydigit" file="/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/test_cases/tb_binarydigit.py" lineno="6" time="0.0007054805755615234" sim_time_ns="18.000001" ratio_time="25514.52389128219" />
+  </testsuite>
+</testsuites>

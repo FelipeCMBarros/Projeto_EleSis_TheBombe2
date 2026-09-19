@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1789808272" />
+    <testcase name="tb_ram64" classname="tb_ram64" file="/home/borg/Documents/Projeto_EleSis_TheBombe2/d_logSeq/test_cases/tb_ram64.py" lineno="5" time="0.0005083084106445312" sim_time_ns="10.500001" ratio_time="20656.75243635272">
+      <failure message="Test failed with RANDOM_SEED=1789808272" />
+    </testcase>
+  </testsuite>
+</testsuites>
