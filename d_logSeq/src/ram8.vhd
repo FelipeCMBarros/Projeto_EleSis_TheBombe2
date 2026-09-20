@@ -1,7 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- Ram8.vhd
-
 Library ieee;
 use ieee.std_logic_1164.all;
 
@@ -59,5 +55,109 @@ architecture arch of Ram8 is
 
 begin
 
+	-- Distribui o sinal LOAD para o registrador correspondente ao endereço selecionado.
+	-- Cada uma das 8 portas é feita manualmente 
+
+	dmux: DMux8Way
+		port map (
+			a   => load,
+			sel => address,
+			q0  => load0,
+			q1  => load1,
+			q2  => load2,
+			q3  => load3,
+			q4  => load4,
+			q5  => load5,
+			q6  => load6,
+			q7  => load7
+		);
+
+	-- Registrador 0
+	reg0: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load0,
+			output => output0
+		);
+
+	-- Registrador 1
+	reg1: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load1,
+			output => output1
+		);
+
+	-- Registrador 2
+	reg2: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load2,
+			output => output2
+		);
+
+	-- Registrador 3
+	reg3: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load3,
+			output => output3
+		);
+
+	-- Registrador 4
+	reg4: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load4,
+			output => output4
+		);
+
+	-- Registrador 5
+	reg5: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load5,
+			output => output5
+		);
+
+	-- Registrador 6
+	reg6: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load6,
+			output => output6
+		);
+
+	-- Registrador 7
+	reg7: Register16
+		port map (
+			clock  => clock,
+			input  => input,
+			load   => load7,
+			output => output7
+		);
+
+	-- Seleciona o conteúdo do endereço desejado
+	-- para a saída da RAM.
+	mux: Mux8Way16
+		port map (
+			a   => output0,
+			b   => output1,
+			c   => output2,
+			d   => output3,
+			e   => output4,
+			f   => output5,
+			g   => output6,
+			h   => output7,
+			sel => address,
+			q   => output
+		);
 
 end architecture;
