@@ -22,8 +22,7 @@ architecture arch of BinaryDigit is
 			d:      in std_logic;
 			clear:  in std_logic;
 			preset: in std_logic;
-			q:     out std_logic
-		);
+			q:     out std_logic);
 	end component;
 
 	component Mux2Way is
@@ -37,23 +36,23 @@ architecture arch of BinaryDigit is
 	signal dffout,muxout: std_logic;
 
 begin
-MUX1: Mux2Way
-	port map (
+MUX: Mux2Way
+	port map(
+		sel => load,
 		a => dffout,
 		b => input,
-		sel => load,
 		q => muxout
 	);
-FFD1: FlipFlopD
+
+FFD: FlipFlopD
 	port map(
 		clock => clock,
 		d => muxout,
+		q => dffout,
 		clear => '0',
-		preset => '0',
-		q => dffout
+		preset => '0'
 	);
+
 output <= dffout;
-
-
 
 end architecture;
