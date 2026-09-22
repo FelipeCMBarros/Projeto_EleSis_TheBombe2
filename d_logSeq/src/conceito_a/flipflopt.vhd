@@ -14,9 +14,19 @@ entity FlipFlopT is
 end entity;
 
 architecture arch of FlipFlopT is
-
-
+    signal q_internal : std_logic := '0';
 begin
 
+    q    <= q_internal;
+    notq <= not q_internal;
+
+    process(clock)
+    begin
+        if rising_edge(clock) then
+            if t = '1' then
+                q_internal <= not q_internal;
+            end if;
+        end if;
+    end process;
 
 end architecture;
