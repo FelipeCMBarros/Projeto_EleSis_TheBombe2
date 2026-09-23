@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Sep 23 17:49:22 2026
+[*]
+[dumpfile] "/home/borg/Projeto_EleSis_TheBombe2/d_logSeq/sim_build/pc.ghw"
+[dumpfile_mtime] "Wed Sep 23 17:36:32 2026"
+[dumpfile_size] 4123
+[savefile] "/home/borg/Projeto_EleSis_TheBombe2/d_logSeq/sim_build/pc.gtkw"
+[timestart] 0
+[size] 960 1016
+[pos] 809 -151
+*-23.849600 4690000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.pc.
+[treeopen] top.pc.inc_pc.
+[treeopen] top.pc.mux_inc.
+[treeopen] top.pc.mux_load.
+[treeopen] top.pc.mux_reset.
+[treeopen] top.pc.reg_pc.
+[sst_width] 233
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+top.pc.clock
+top.pc.reset
+top.pc.load
+top.pc.increment
+@24
+#{top.pc.input[15:0]} top.pc.input[15] top.pc.input[14] top.pc.input[13] top.pc.input[12] top.pc.input[11] top.pc.input[10] top.pc.input[9] top.pc.input[8] top.pc.input[7] top.pc.input[6] top.pc.input[5] top.pc.input[4] top.pc.input[3] top.pc.input[2] top.pc.input[1] top.pc.input[0]
+@25
+#{top.pc.output[15:0]} top.pc.output[15] top.pc.output[14] top.pc.output[13] top.pc.output[12] top.pc.output[11] top.pc.output[10] top.pc.output[9] top.pc.output[8] top.pc.output[7] top.pc.output[6] top.pc.output[5] top.pc.output[4] top.pc.output[3] top.pc.output[2] top.pc.output[1] top.pc.output[0]
+@22
+#{top.pc.outputreg[15:0]} top.pc.outputreg[15] top.pc.outputreg[14] top.pc.outputreg[13] top.pc.outputreg[12] top.pc.outputreg[11] top.pc.outputreg[10] top.pc.outputreg[9] top.pc.outputreg[8] top.pc.outputreg[7] top.pc.outputreg[6] top.pc.outputreg[5] top.pc.outputreg[4] top.pc.outputreg[3] top.pc.outputreg[2] top.pc.outputreg[1] top.pc.outputreg[0]
+#{top.pc.muxin0[15:0]} top.pc.muxin0[15] top.pc.muxin0[14] top.pc.muxin0[13] top.pc.muxin0[12] top.pc.muxin0[11] top.pc.muxin0[10] top.pc.muxin0[9] top.pc.muxin0[8] top.pc.muxin0[7] top.pc.muxin0[6] top.pc.muxin0[5] top.pc.muxin0[4] top.pc.muxin0[3] top.pc.muxin0[2] top.pc.muxin0[1] top.pc.muxin0[0]
+#{top.pc.muxincout[15:0]} top.pc.muxincout[15] top.pc.muxincout[14] top.pc.muxincout[13] top.pc.muxincout[12] top.pc.muxincout[11] top.pc.muxincout[10] top.pc.muxincout[9] top.pc.muxincout[8] top.pc.muxincout[7] top.pc.muxincout[6] top.pc.muxincout[5] top.pc.muxincout[4] top.pc.muxincout[3] top.pc.muxincout[2] top.pc.muxincout[1] top.pc.muxincout[0]
+#{top.pc.muxloadout[15:0]} top.pc.muxloadout[15] top.pc.muxloadout[14] top.pc.muxloadout[13] top.pc.muxloadout[12] top.pc.muxloadout[11] top.pc.muxloadout[10] top.pc.muxloadout[9] top.pc.muxloadout[8] top.pc.muxloadout[7] top.pc.muxloadout[6] top.pc.muxloadout[5] top.pc.muxloadout[4] top.pc.muxloadout[3] top.pc.muxloadout[2] top.pc.muxloadout[1] top.pc.muxloadout[0]
+#{top.pc.muxout[15:0]} top.pc.muxout[15] top.pc.muxout[14] top.pc.muxout[13] top.pc.muxout[12] top.pc.muxout[11] top.pc.muxout[10] top.pc.muxout[9] top.pc.muxout[8] top.pc.muxout[7] top.pc.muxout[6] top.pc.muxout[5] top.pc.muxout[4] top.pc.muxout[3] top.pc.muxout[2] top.pc.muxout[1] top.pc.muxout[0]
+[pattern_trace] 1
+[pattern_trace] 0
