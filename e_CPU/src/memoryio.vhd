@@ -97,27 +97,27 @@ BEGIN
     ----------------------------------------
     -- Controla os LOAD
     ----------------------------------------
-    LOAD_RAM	  <= ???????? 
-    LOAD_GPOUT   <= ????????
-    LOAD_LED     <= ????????
+    LOAD_RAM	   <= LOAD AND NOT ADDRESS(14); 
+    LOAD_GPOUT   <= LOAD AND ADDRESS(14) AND ADDRESS(1) AND ADDRESS(0);
+    LOAD_LED     <= LOAD AND ADDRESS(14) AND NOT ADDRESS(1) AND NOT ADDRESS(0);
 
     ----------------------------------------
     -- SW, LED e GPIO                     --
     ----------------------------------------
     -- Compatibilidade de tamanho
     LED <= LED16(9 downto 0);
-	 GPOUT <= GPOUT16(9 downto 0);
+	  GPOUT <= GPOUT16(9 downto 0);
 
     -- Compatibilidade de tamanho
     SW16(15 downto 10) <= (others => '0');
     SW16( 9 DOWNTO  0) <= SW;
-	 GPIN16(15 downto 10) <= (others => '0');
+	  GPIN16(15 downto 10) <= (others => '0');
     GPIN16( 9 DOWNTO  0) <= GPIN;
 
     ----------------------------------------
     -- SAIDA do memory I/O                --
     ----------------------------------------
     -- precisar ser: RAM ou SW16
-    OUTPUT <= ????????
+    OUTPUT <= OUTPUT_RAM WHEN ADDRESS(14) = '0' ELSE SW16 WHEN ADDRESS(1 DOWNTO 0) = "01" ELSE GPIN16     WHEN ADDRESS(1 DOWNTO 0) = "10" ELSE (OTHERS => '0');
 
 END logic;
